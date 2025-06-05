@@ -1,0 +1,45 @@
+/* Styles spécifiques à la page de contact */
+.contact-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color:#f5f5f5 ;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.about-container {
+  max-width: 1000px; /* Ajustez selon vos besoins */
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f5f5f5 ;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap; /* Permet aux colonnes de passer à la ligne sur les petits écrans */
+  justify-content: space-between; /* Espace entre les colonnes */
+}
+
+.about-column1 {
+  width: 48%; /* Légèrement moins de 50% pour laisser un peu d'espace */
+}
+
+.contact-box {
+  border: 2px solid #e0e0e0;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.find-us-button {
+  background-color: #007bff; /* Couleur bleue */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  text-decoration: none; /* Enlève le soulignement du lien */
+  display: inline-block; /* Permet de définir la taille */
+  margin-top: 10px;
+}
+
+.find-us-button:hover {
+  background-color: #0056b3;
+}

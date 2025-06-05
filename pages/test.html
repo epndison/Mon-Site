@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos de l'EPN Dison</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* Styles spécifiques à aboutas.html */
+    .about-container {
+      max-width: 1000px; /* Ajustez selon vos besoins */
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-wrap: wrap; /* Permet aux colonnes de passer à la ligne sur les petits écrans */
+      justify-content: space-between; /* Espace entre les colonnes */
+    }
+
+    .about-column {
+      width: 48%; /* Légèrement moins de 50% pour laisser un peu d'espace */
+    }
+
+    .contact-box {
+      border: 2px solid #e0e0e0;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    .find-us-button {
+      background-color: #007bff; /* Couleur bleue */
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      text-decoration: none; /* Enlève le soulignement du lien */
+      display: inline-block; /* Permet de définir la taille */
+      margin-top: 10px;
+    }
+
+    .find-us-button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Responsive design pour les petits écrans */
+    @media screen and (max-width: 768px) {
+      .about-column {
+        width: 100%; /* Les colonnes prennent toute la largeur */
+        margin-bottom: 20px; /* Ajoute de l'espace entre les sections */
+      }
+    }
+  </style>
+</head>
+
+<body class="alias_home">
+
+<nav class="navbar">
+  <div class="logo">
+    <img src="../img/EPN_logo.png" alt="Logo EPN">
+    <h1>Espaces publics numériques de Dison</h1>
+  </div>
+  <ul class="nav-links">
+    <li><a href="../index.html">Accueil</a></li>
+    <li class="active"><a href="aboutas.html" >À propos de l'EPN Dison</a></li>
+    <li><a href="GeoLoc.html">Trouver notre EPN</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="hamburger-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<main>
+  <div class="about-container">
+    <div class="about-column">
+      <h2>Objectif</h2>
+      <p>L'Espace Public Numérique (EPN) est une structure de proximité ouverte à tous, équipée de matériel
+        informatique et connectée à Internet. Il offre de l'accès et de l'apprentissage à l'informatique, à la
+        culture numérique et à Internet sous une forme conviviale, coopérative et responsable.</p>
+
+      <h2>Heures d'ouverture</h2>
+      <p>mardi et jeudi de 8 h à 16 h.</p>
+
+      <h2>Activités</h2>
+      <p>L'EPN de Dison, situé au 1er étage du bâtiment communal rue d'Andrimont propose des services diversifiés
+        d'accès, de formations et d'accompagnement, adaptés aux besoins du public de manière individuelle ou par
+        petits groupes.</p>
+      <p>Un animateur multimédia est à la disposition du public pour réaliser un accompagnement dans les démarches
+        de recherche d'emploi, de formation ainsi qu'une aide à l'utilisation des outils informatique.</p>
+
+      <h2>Catégories professionnelles</h2>
+      <p>Animateur-trice</p>
+
+      <a href="GeoLoc.html" class="find-us-button">Trouver notre EPN</a>
+    </div>
+
+    <div class="about-column">
+      <h2>Contactez-nous</h2>
+      <div class="contact-box">
+        <p>Numéro de dossier : 4885</p>
+        <p>Adresse principale : rue d'Andrimont 52 - 1er étage 4820 DISON</p>
+        <p>Commune : DISON</p>
+        <p>Arrondissement : VERVIERS</p>
+        <p>0473/97 77 31</p>
+        <p><a href="mailto:epndison@gmail.com">epndison@gmail.com</a></p>
+        <p><a href="https://www.facebook.com/disonepn">https://www.facebook.com/disonepn</a></p>
+      </div>
+      <h2>Siège social :</h2>
+      <p>[Adresse du siège social]</p>  </div>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 EPN Dison</p>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+
+</html>

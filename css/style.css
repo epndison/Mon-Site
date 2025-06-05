@@ -1,0 +1,463 @@
+/* Ajouter de font de text "ALLer" */
+@font-face {
+  font-family: 'Aller';
+  src: url("../Font/Aller_Rg.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Aller', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+body.alias_home {
+  background: #f5f5f5 url(../img/background_home.png) no-repeat 50% 190px !important;
+  font-family: 'Aller', serif;
+  color: #87888a;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
+nav ul li a:hover {
+  background-color: gray;
+}
+
+.navbar {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar a {
+  color: rgba(107, 107, 114, 0.87);
+  text-decoration: none;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links  li {
+  list-style: none;
+  margin: 0 15px;
+}
+.nav-links  li a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;
+}
+.nav-links  li a:hover {
+  background-color: #ddd;
+}
+.nav-links ul li.active a {
+  color: #0067A1;
+  font-weight: 600;
+}
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 10px;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Styles pour le menu mobile (caché par défaut) */
+.nav-links.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-links.mobile-menu ul {
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+.nav-links.mobile-menu li {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+.nav-links.mobile-menu li a {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+#home_content {
+  position: relative;
+  padding-top: 80px;
+  height: auto;
+  padding-left: 45px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px;
+  margin-right: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+.hero {
+  position: relative;
+  margin: 50px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.stats {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.stat-item {
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.stat-item .number {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.stat-item .label {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 0.8em;
+  color: #6c757d;
+}
+
+.epn-definition h2 {
+  color: #007bff;
+  margin-bottom: 8px;
+}
+
+/* Styles pour le bouton "Trouver un EPN" */
+#find_epn_button a:after{
+content: '';
+display: block;
+width: 100%;
+height: 100%;
+background: url(../img/find_epn.png) no-repeat 100% 100%;
+opacity: 0;
+-webkit-transition: all 500ms ease;
+-moz-transition: all 500ms ease;
+-ms-transition: all 500ms ease;
+-o-transition: all 500ms ease;
+transition: all 500ms ease;
+position: absolute;
+top: 0;
+}
+#find-epn-button a{
+position: relative;
+background: url(../img/find_epn.png) no-repeat 0 0;
+display: block;
+width: 299px;
+height: 87px;
+text-indent: -9990px;
+}
+
+
+.find-epn a.find-epn-button:hover {
+  opacity: 0.9;
+}
+
+#home_introduction {
+  color: #f5f5f5;
+  font-size: 18px;
+  width: 48%;
+}
+
+p,
+pre {
+  margin: 1em 0;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  unicode-bidi: isolate;
+}
+
+body {
+  font-family: 'Aller', serif;
+  color: #87888a;
+  padding-top: 0 !important;
+}
+
+body {
+  background: #f5f5f5 url("../img/background_page.png") no-repeat 50% 190px !important;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+.home_illu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+  height: auto;
+}
+
+.home_illu img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+/* Styles spécifiques à GeoLoc.html */
+.geoloc-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f5f5f5 ;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.map-container {
+  width: 100%;
+  height: 400px;
+}
+/**page à propos */
+.about-column {
+  width: 100%; /* Les colonnes prennent toute la largeur */
+  margin-bottom: 20px; /* Ajoute de l'espace entre les sections */
+}
+.contact-form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+/* Responsive design pour les petits écrans */
+@media screen and (max-width: 768px) {
+  .nav-links{
+    display: none;
+  }
+  .hamburger-menu {
+    display: block; /* Affiche le bouton */
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* RESPONSIVITÉ                                */
+/* -------------------------------------------------------------------------- */
+
+/* Pour les écrans de taille moyenne (tablettes, 768px et moins) */
+@media (max-width: 1090px) {
+  .home_illu {
+    display: none;
+  }
+  .nav-links{
+    display: none;
+  }
+  .hamburger-menu {
+    display: block; /* Affiche le bouton */
+  }
+
+  header {
+    padding: 10px 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .logo img {
+    height: 80px;
+    margin-right: 0;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links ul li {
+    margin: 5px 0;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #home_content {
+    padding-top: 20px;
+    background-position: top center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #home_introduction {
+    font-size: 16px;
+  }
+
+  .find-epn a.find-epn-button {
+    width: auto;
+    height: auto;
+    background-size: contain;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
+
+/* Pour les petits écrans (téléphones, 576px et moins) */
+@media (max-width: 576px) {
+  .logo img {
+    height: 60px;
+  }
+
+  nav ul li a {
+    padding: 6px 10px;
+    font-size: 0.9em;
+  }
+
+  .stat-item .number {
+    font-size: 1.2em;
+  }
+}
